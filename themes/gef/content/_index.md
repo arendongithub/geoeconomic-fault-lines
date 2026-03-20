@@ -16,4 +16,4 @@ Trade wars, trade deals, and threats of increasing import tariffs. Global econom
 
 &nbsp;
 
-GeoeconomicFaultLines is a five-year, NWO-funded research project that will investigate how the geoeconomic turn is transforming the coalitional politics in the EU, providing insights into the political barriers for the EU to develop the aspired economic statecraft.
+Geoeconomic Fault Lines is a five-year, NWO-funded research project that will investigate how the geoeconomic turn is transforming the coalitional politics in the EU, providing insights into the political barriers for the EU to develop the aspired economic statecraft.
