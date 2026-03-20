@@ -1,0 +1,55 @@
+<!-- Navigation -->
+<nav class="bg-blue-950">
+  <div class="flex justify-end sm:hidden">
+    <button
+      onclick="toggleMenu()"
+      type="button"
+      class="block px-4 py-3 text-blue-300 hover:text-white focus:text-white focus:outline-none"
+    >
+      <svg
+        id="menu-icon"
+        class="h-6 w-6 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+        />
+      </svg>
+      <svg
+        id="close-icon"
+        class="hidden h-6 w-6 fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    id="menu"
+    class="mx-auto hidden max-w-5xl px-4 pt-6 pb-6 sm:flex sm:items-center"
+  >
+    {{ range .Site.Menus.main }}
+    <a
+      href="{{ .URL }}"
+      class="mt-1 block rounded px-2 py-1 font-semibold text-white hover:bg-blue-900 sm:mt-0"
+      >{{ .Name }}</a
+    >
+    {{ end }}
+  </div>
+</nav>

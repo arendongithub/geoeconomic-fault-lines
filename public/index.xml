@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Geoeconomic Fault Lines</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Geoeconomic Fault Lines</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2026 21:10:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Petrol Wars: Oil Price Volatility and the Strategic Implications for Nations</title>
+      <link>http://localhost:1313/news-events/20260319-news/</link>
+      <pubDate>Thu, 19 Mar 2026 21:10:00 +0100</pubDate>
+      <guid>http://localhost:1313/news-events/20260319-news/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.</description>
+    </item>
+    <item>
+      <title>Beyond Borders: How Digital Currency is Changing the Face of Geopolitics</title>
+      <link>http://localhost:1313/news-events/20260306-news/</link>
+      <pubDate>Fri, 06 Mar 2026 21:10:00 +0100</pubDate>
+      <guid>http://localhost:1313/news-events/20260306-news/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.</description>
+    </item>
+    <item>
+      <title>Who implements the EU’s geoeconomic agenda?</title>
+      <link>http://localhost:1313/news-events/20260304-event/</link>
+      <pubDate>Wed, 04 Mar 2026 21:10:00 +0100</pubDate>
+      <guid>http://localhost:1313/news-events/20260304-event/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;In a context of heightened geopolitical pressures and heightened competition for technological dominance, the EU has adopted a series of instruments to protect itself from economic coercion. Yet, internal divisions are becoming acute when implementing these new measures. So, what drives support or opposition to geoeconomic policies in the EU?&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;GeoeconomicFaultLines examines how the geoeconomic turn is transforming the coalitional politics within the EU. Our research focuses on mapping and explaining the political cleavages activated by these new instruments. By understanding these patterns of consensus and contestation, we aim to identify the political barriers for the EU to develop strategic autonomy in a world of mounting competition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/2024-bauerle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2024-bauerle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/2024-surralles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2024-surralles/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#xA;tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/2025-adriaensen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2025-adriaensen/</guid>
+      <description>&lt;p&gt;The aspiration of the EU to pursue a geopolitical agenda has raised both interest and scepticism within the academic and policy community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/coming-soon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/coming-soon/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+{{ define "main" }}
+<!-- 
+  {{ .Content }}
+  {{ range site.RegularPages }}
+    <section>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+    </section>
+  {{ end }}
+-->
+
+<!--Project description -->
+<div class="mx-auto mt-6 flex max-w-5xl px-6 sm:gap-x-6">
+  <div class="hidden sm:block sm:w-1/2">
+    {{ with resources.Get "images/unisphere-flushing-meadows.jpg" }}
+    <img
+      src="{{ .RelPermalink }}"
+      class="aspect-square w-full rounded-lg object-cover shadow-2xl"
+    />
+    {{ end }}
+  </div>
+  <div class="sm:w-1/2">
+    <h1 class="px-2 text-2xl font-bold text-blue-950">
+      {{ .Param "heading_project_description" }}
+    </h1>
+    <div class="mt-2 p-2 text-gray-700">{{ .Content }}</div>
+    <a
+      href="{{ .Site.BaseURL }}/about"
+      class="mx-2 inline-block rounded bg-green-700 px-4 py-2 text-white shadow-lg hover:bg-green-800"
+      >{{ .Param "button_read_more" }}</a
+    >
+  </div>
+</div>
+
+<!-- Row -->
+<div class="mx-auto mt-12 max-w-5xl px-6">
+  <h1 class="text-2xl font-semibold text-blue-950">
+    {{ .Param "heading_in_the_spotlight" }}
+  </h1>
+</div>
+<div class="mx-auto mt-6 max-w-5xl px-6 sm:flex sm:gap-x-6">
+  <div class="rounded border-2 border-gray-200 sm:w-1/2">
+    <div class="h-48 w-full bg-gray-300"></div>
+    <!--img class="w-full aspect-3/1 object-cover object-center rounded" src=""-->
+    <div class="mt-2 p-2">
+      <h2 class="font-semibold text-blue-950 text-xl">
+        {{ .Param "heading_news_events" }}
+      </h2>
+      <ul class="mt-6 list-inside list-disc text-sm text-gray-600">
+        {{ range where site.RegularPages.ByDate.Reverse "Params.post_type" "in"
+        (slice "event" "news") | first 3 }}
+        <li class="hover:text-blue-400">
+          <a
+            href="{{ .RelPermalink }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="font-semibold">
+              {{ $type := .Param "post_type" }} {{ if eq $type "event" }} {{ $t
+              := .Param "event_date"}} {{ $t.Day }} {{ $t.Month }} {{ $t.Year }}
+              {{ else }} {{ $t := .Date}} {{ $t.Day }} {{ $t.Month}} {{ $t.Year
+              }} {{ end }}</span
+            >
+            - {{ .Title }}
+            <span
+              class="inline-block rounded bg-gray-700 px-1 text-xs text-white uppercase"
+              >{{ .Param "post_type" }}</span
+            ></a
+          >
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="mt-6 rounded border-2 border-gray-200 sm:mt-0 sm:w-1/2">
+    <div class="h-48 w-full bg-gray-300"></div>
+    <!--img class="w-full aspect-3/1 object-cover object-center rounded" src=""-->
+    <div class="mt-2 p-2">
+      <h2 class="font-semibold text-blue-950 text-xl">
+        {{ .Param "heading_publications_data" }}
+      </h2>
+      <ul class="mt-6 ml-3 list-outside list-disc text-sm text-gray-600">
+        {{ range where (site.RegularPages.ByParam "publication_date").Reverse
+        "Params.publication_type" "related_reading" | first 3 }}
+        <li class="mt-4 hover:text-blue-400">
+          <a
+            href="https://www.maastrichtuniversity.nl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $html := .Param "publication_title" }}{{ $html | safeHTML }} {{
+            with .Content }}
+            <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">
+              {{ . }}
+            </div>
+            {{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{{ end }}

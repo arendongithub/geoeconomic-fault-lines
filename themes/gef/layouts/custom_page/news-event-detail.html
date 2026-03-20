@@ -1,0 +1,184 @@
+{{ define "main" }}
+
+<!-- News & Events Detail -->
+
+<section class="py-6">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="mb-12 mt-6">
+      <h1 class="text-4xl font-semibold text-blue-400">
+        {{ $page := .Page.GetPage "/news-events" }}{{ $page.Title }}
+      </h1>
+    </div>
+    <div class="grid grid-cols-1 gap-6 text-gray-700 lg:grid-cols-3">
+      <!-- Event or News Title  -->
+      <div class="lg:col-span-3">
+        <h2 class="mb-6 text-xl font-semibold text-gray-900">{{ .Title }}</h2>
+      </div>
+
+      <!--Event Details-->
+      <div class="border-r-1 border-blue-400 text-sm">
+        {{ $type := .Param "post_type" }} {{ if eq $type "event" }}
+        <!-- Place-->
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+          </div>
+          <div class="inline-block">
+            <p>
+              {{ $html := .Param "event_location_full" }}{{ $html | safeHTML }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Date-->
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 inline-block size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+              />
+            </svg>
+          </div>
+          <div class="inline-block">
+            <p>
+              {{ $t := .Param "event_date"}} {{ $t.Day }}-{{ $t.Month | int
+              }}-{{ $t.Year }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Time-->
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 inline-block size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </div>
+          <div class="inline-block">
+            <p>{{ .Param "event_time" }}</p>
+          </div>
+        </div>
+
+        <!-- URL-->
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 inline-block size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+              />
+            </svg>
+          </div>
+          <div class="inline-block text-blue-400">
+            <p>
+              <a
+                href="https://www.maastrichtuniversity.nl"
+                target="_blank"
+                class="hover:underline"
+                >{{ .Param "event_url" }}</a
+              >
+            </p>
+          </div>
+        </div>
+        {{ else}}
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 inline-block size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+              />
+            </svg>
+          </div>
+          <div class="inline-block">
+            <p>
+              {{ $t := .Date }} {{ $t.Day }}-{{ $t.Month | int }}-{{ $t.Year }}
+            </p>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="inline-block align-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mr-2 inline-block size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+          </div>
+          <div class="inline-block">
+            <p>{{ .Param "news_author" }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- Event Description -->
+      <div class="lg:col-span-2">
+        <p class="text-gray-500">{{ .Content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

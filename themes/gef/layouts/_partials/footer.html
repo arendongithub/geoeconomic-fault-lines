@@ -1,0 +1,23 @@
+<!--
+<p>Copyright {{ now.Year }}. All rights reserved.</p>
+-->
+
+<!-- Footer -->
+<footer class="mx-auto max-w-5xl px-4 pt-6 pb-6">
+  <div class="text-center text-blue-950">
+    {{ with resources.Get "images/nwo-logo-color.jpg" }}
+    <img src="{{ .RelPermalink }}" class="mr-2 inline h-10" />
+    {{ end }}{{ .Site.Param "nwo_credit" }}
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const mi = document.getElementById("menu-icon");
+    const ci = document.getElementById("close-icon");
+    const m = document.getElementById("menu");
+    mi.classList.toggle("hidden");
+    ci.classList.toggle("hidden");
+    m.classList.toggle("hidden");
+  }
+</script>

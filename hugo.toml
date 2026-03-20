@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Geoeconomic Fault Lines'
+theme = 'gef'
+
+[params]
+  nwo_credit = 'This project is funded by the NWO, grant number 406.22.24RB.044.'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'News & Events'
+  url = '/news-events'
+  weight = 20
+[[menu.main]]
+  name = 'Publications'
+  url = '/publications'
+  weight = 30
+[[menu.main]]
+  name = 'About'
+  url = '/about'
+  weight = 40
+

@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- Publications -->
+<div class="mx-auto mt-12 max-w-5xl px-6">
+  <div class="mb-12">
+    <h1 class="text-4xl font-semibold text-blue-400">
+      {{ .Param "heading_project_publications" }}
+    </h1>
+  </div>
+  <div>
+    <ul class="ml-6 list-outside list-disc">
+      {{ range where (site.RegularPages.ByParam "publication_date").Reverse
+      "Params.publication_type" "project" }}
+      <li class="py-3 hover:text-blue-400">
+        <a
+          href='{{ .Param "publication_url" }}'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $html := .Param "publication_title" }}{{ $html | safeHTML }} {{
+          with .Content }}
+          <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">{{ . }}</div>
+          {{ end }}</a
+        >
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+<hr class="mx-auto my-12 max-w-5xl border-t border-gray-300 px-6" />
+
+<div class="mx-auto mt-12 max-w-5xl px-6">
+  <div class="mb-12">
+    <h1 class="text-4xl font-semibold text-blue-400">
+      {{ .Param "heading_related_readings" }}
+    </h1>
+  </div>
+  <div>
+    <ul class="ml-4 list-outside list-disc">
+      {{ range where (site.RegularPages.ByParam "publication_date").Reverse
+      "Params.publication_type" "related_reading" }}
+      <li class="py-3 hover:text-blue-400">
+        <a
+          href='{{ .Param "publication_url" }}'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ $html := .Param "publication_title" }}{{ $html | safeHTML }} {{
+          with .Content }}
+          <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">{{ . }}</div>
+          {{ end }}</a
+        >
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+{{ end }}
