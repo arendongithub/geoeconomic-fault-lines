@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Geoeconomic Fault Lines'
 theme = 'gef'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   nwo_credit = 'This project is funded by the NWO, grant number 406.22.24RB.044.'
 
