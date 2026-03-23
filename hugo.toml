@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Geoeconomic Fault Lines'
+title = 'Geoeconomic FaultLines'
 theme = 'gef'
 
 [caches]
