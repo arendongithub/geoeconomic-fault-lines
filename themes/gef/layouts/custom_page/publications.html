@@ -9,7 +9,7 @@
   </div>
   <div>
     <ul class="ml-6 list-outside list-disc">
-      {{ range where (site.RegularPages.ByParam "publication_date").Reverse
+      {{ range where (site.RegularPages.ByParam "publication_year").Reverse
       "Params.publication_type" "project" }}
       <li class="py-3 hover:text-blue-400">
         <a
