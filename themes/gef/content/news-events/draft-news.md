@@ -4,7 +4,7 @@ date = 2026-03-19T21:10:00.000+01:00
 summary = 'Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem.'
 layout = 'news-event-detail'
 type = 'custom_page'
-draft = false
+draft = true
 [params]
   post_type = 'news' # post_type is 'event' or 'news'
   news_author = 'Odile Feltkamp'
