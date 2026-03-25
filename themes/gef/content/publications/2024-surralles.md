@@ -11,5 +11,4 @@ draft = false
 
 <!-- [optional] A one-liner to describe the publication. -->
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.
+This article sets a common conceptual ground to assess whether, how and why the single European market is experiencing such a geoeconomic turn and how EU responses are shaping other international actors in the process.
