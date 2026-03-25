@@ -1,6 +1,6 @@
 +++
 title = 'Publications'
-draft = false
+draft = true
 [params]
     post_type = 'publication'
     publication_type = 'related_reading'
