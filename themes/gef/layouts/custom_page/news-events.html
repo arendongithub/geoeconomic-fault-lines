@@ -14,7 +14,11 @@
       class="group block rounded border border-gray-200 hover:border-blue-400"
     >
       <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer">
+        {{ $image := .Param "post_thumbnail" }}{{ with $image }}
+        <img src="images/{{ $image }}" />
+        {{ else }}
         <div class="h-48 w-full bg-gray-300"></div>
+        {{ end }}
         <div class="mt-2 p-2">
           <h2
             class="mb-2 font-semibold text-blue-950 group-hover:text-blue-400"
