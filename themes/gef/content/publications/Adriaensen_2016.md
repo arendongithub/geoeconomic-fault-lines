@@ -4,7 +4,7 @@ draft = false
 [params]
     post_type = 'publication'
     publication_type = 'related_reading'
-    publication_title = 'Adriaensen, J. (2016) National administrations in EU trade policy: Maintaining the capacity to control. Palgrave. [https://link.springer.com/book/10.1057/978-1-137-54767-5]'
+    publication_title = 'Adriaensen, J. (2016). National administrations in EU trade policy: Maintaining the capacity to control. Palgrave. [https://link.springer.com/book/10.1057/978-1-137-54767-5]'
     publication_year = 2016
     publication_url = 'https://link.springer.com/book/10.1057/978-1-137-54767-5'
 +++
