@@ -4,7 +4,7 @@ draft = false
 [params]
     post_type = 'publication'
     publication_type = 'related_reading'
-    publication_title = 'Adriaensen J. & E. Postnikov, (2022) The geo-economic turn in FTA negotiations? EU trade policy in the Asia-Pacific. Palgrave – International Studies series. [https://link.springer.com/book/10.1007/978-3-030-81281-2]'
+    publication_title = 'Adriaensen J. & E. Postnikov. (2022). The geo-economic turn in FTA negotiations? EU trade policy in the Asia-Pacific. Palgrave – International Studies series. [https://link.springer.com/book/10.1007/978-3-030-81281-2]'
     publication_year = 2022
     publication_url = 'https://link.springer.com/book/10.1007/978-3-030-81281-2'
 +++
