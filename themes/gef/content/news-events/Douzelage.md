@@ -7,6 +7,7 @@ type = 'custom_page'
 draft = false
 [params]
   post_type = 'event' # post_type is 'event' or 'news'
+  post_thumbnail = 'Douzelage.png'
   event_date = 2026-03-24T12:10:00.000+01:00
   event_location = 'Meersen'
   event_location_full = 'Connect 5<br/>Markt 5<br/>6231 LR Meersen'
