@@ -32,4 +32,4 @@ In a context of heightened geopolitical pressures and heightened competition for
 
 &nbsp;
 
-GeoeconomicFaultLines examines how the geoeconomic turn is transforming the coalitional politics within the EU. Our research focuses on mapping and explaining the political cleavages activated by these new instruments. By understanding these patterns of consensus and contestation, we aim to identify the political barriers for the EU to develop strategic autonomy in a world of mounting competition.
+Geoeconomic FaultLines examines how the geoeconomic turn is transforming the coalitional politics within the EU. Our research focuses on mapping and explaining the political cleavages activated by these new instruments. By understanding these patterns of consensus and contestation, we aim to identify the political barriers for the EU to develop strategic autonomy in a world of mounting competition.
