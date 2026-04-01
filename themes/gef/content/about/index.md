@@ -7,7 +7,7 @@ draft = false
     heading_project = 'Project'
     heading_team = 'Team'
     heading_note_illustrations = 'Note on our illustrations'
-    illustrations_credit_text = 'Our project is all about the political fault lines in EU geoeconomic policies. To create a visual identity representing this topic, we partnered with illustrator Kirstin Bone. Her art can be found on the website www.kirstintheartist.com and on Instagram: @kirstintheartist'
+    illustrations_credit_text = 'Our project is all about the political fault lines in EU geoeconomic policies. To create a visual identity representing this topic, we partnered with illustrator Kirstin Bone. Her art can be found on the website www.kirstinbone.co.uk and on Instagram: @kirstintheartist'
     link_profile_text = 'View profile'
     
     anna = 'Anna Herranz Surralles'
