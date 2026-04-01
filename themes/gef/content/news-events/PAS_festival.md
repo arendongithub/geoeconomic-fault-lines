@@ -7,6 +7,7 @@ type = 'custom_page'
 draft = false
 [params]
   post_type = 'event' # post_type is 'event' or 'news'
+  post_thumbnail = 'PAS_festival.png'
   event_date = 2026-09-05T14:46:00.000+02:00
   event_location = 'Maastricht'
   event_location_full = 'tba'
