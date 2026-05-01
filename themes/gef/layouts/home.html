@@ -12,7 +12,7 @@
 <!--Project description -->
 <div class="mx-auto mt-6 flex max-w-5xl px-6 sm:gap-x-6">
   <div class="hidden sm:block sm:w-1/2">
-    {{ with resources.Get "images/unisphere-flushing-meadows.jpg" }}
+    {{ with resources.Get "images/Spot_1_1200.png" }}
     <img
       src="{{ .RelPermalink }}"
       class="aspect-square w-full rounded-lg object-cover shadow-2xl"
@@ -40,8 +40,15 @@
 </div>
 <div class="mx-auto mt-6 max-w-5xl px-6 sm:flex sm:gap-x-6">
   <div class="rounded border-2 border-gray-200 sm:w-1/2">
-    <div class="h-48 w-full bg-gray-300"></div>
-    <!--img class="w-full aspect-3/1 object-cover object-center rounded" src=""-->
+    <div class="block">
+      {{ with resources.Get "images/Spot_3_colour_1200.png" }}
+      <img
+        class="aspect-3/2 w-full rounded object-cover object-center"
+        src="{{ .RelPermalink }}"
+        alt="News and events"
+      />
+      {{ end }}
+    </div>
     <div class="mt-2 p-2">
       <h2 class="font-semibold text-blue-950 text-xl">
         {{ .Param "heading_news_events" }}
@@ -49,7 +56,7 @@
       <ul class="mt-6 list-inside list-disc text-sm text-gray-600">
         {{ range where site.RegularPages.ByDate.Reverse "Params.post_type" "in"
         (slice "event" "news") | first 3 }}
-        <li class="hover:text-blue-400">
+        <li class="mt-4 hover:text-blue-400">
           <a
             href="{{ .RelPermalink }}"
             target="_blank"
@@ -65,7 +72,11 @@
             <span
               class="inline-block rounded bg-gray-700 px-1 text-xs text-white uppercase"
               >{{ .Param "post_type" }}</span
-            ></a
+            >{{ with .Content }}
+            <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">
+              {{ . }}
+            </div>
+            {{ end }}</a
           >
         </li>
         {{ end }}
@@ -73,8 +84,15 @@
     </div>
   </div>
   <div class="mt-6 rounded border-2 border-gray-200 sm:mt-0 sm:w-1/2">
-    <div class="h-48 w-full bg-gray-300"></div>
-    <!--img class="w-full aspect-3/1 object-cover object-center rounded" src=""-->
+    <div class="block">
+      {{ with resources.Get "images/Spot_2_1200.png" }}
+      <img
+        class="aspect-3/2 w-full rounded object-cover object-center"
+        src="{{ .RelPermalink }}"
+        alt="News and events"
+      />
+      {{ end }}
+    </div>
     <div class="mt-2 p-2">
       <h2 class="font-semibold text-blue-950 text-xl">
         {{ .Param "heading_publications_data" }}
