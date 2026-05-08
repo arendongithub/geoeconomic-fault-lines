@@ -1,0 +1,17 @@
++++
+title = 'Event Zero'
+date = 2026-06-18T14:46:00.000+02:00
+summary = 'Odile Feltkamp will be presenting at the CES conference in Dublin'
+layout = 'news-event-detail'
+type = 'custom_page'
+draft = false
+[params]
+  post_type = 'news' # post_type is 'event' or 'news'
+  post_thumbnail = 'CES_2026.png'
+  news_author = 'Odile Feltkamp'
+
++++
+
+<!-- News post content. -->
+
+The 32nd international conference of Europeanists (CES) takes place in Dublin from the 16th to 18th of June 2026. The panel in which Odile will participate focuses on the turn to more securitised economic policies in the European Union and (directly or indirectly) address the following question: what kind of geoeconomic actor is the EU? Odile will present her paper titled _MEP support for geoeconomic instruments: Changing fault lines?_ which investigates what factors drive support of Members of the European Parliament (MEPs) for geoeconomic instruments. 
