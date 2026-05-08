@@ -4,7 +4,7 @@ date = 2026-06-18T14:46:00.000+02:00
 summary = 'Odile Feltkamp will be presenting at the CES conference in Dublin'
 layout = 'news-event-detail'
 type = 'custom_page'
-draft = false
+draft = true
 [params]
   post_type = 'news' # post_type is 'event' or 'news'
   post_thumbnail = ''
