@@ -6,6 +6,7 @@ draft = false
 [params]
     heading_project = 'Project'
     heading_team = 'Team'
+    heading_assistants = 'Research Assistants'
     heading_note_illustrations = 'Note on our illustrations'
     illustrations_credit_text = 'Our project is all about the political fault lines in EU geoeconomic policies.<br />To create a visual identity representing this topic, we partnered with illustrator Kirstin Bone. Her art can be found on the website <span class="hover:text-blue-400"><a href="www.kirstinbone.co.uk" target="_blank">www.kirstinbone.co.uk</a></span> and on Instagram: @kirstintheartist.'
     link_profile_text = 'View profile'
