@@ -50,9 +50,11 @@
       {{ end }}
     </div>
     <div class="mt-2 p-2">
-      <h2 class="font-semibold text-blue-950 text-xl">
-        {{ .Param "heading_news_events" }}
-      </h2>
+      <a href="{{ .Site.BaseURL }}/news-events">
+        <h2 class="font-semibold text-blue-950 text-xl hover:text-blue-400">
+          {{ .Param "heading_news_events" }}
+        </h2></a
+      >
       <ul class="mt-6 list-inside list-disc text-sm text-gray-600">
         {{ range where site.RegularPages.ByDate.Reverse "Params.post_type" "in"
         (slice "event" "news") | first 3 }}
@@ -94,9 +96,11 @@
       {{ end }}
     </div>
     <div class="mt-2 p-2">
-      <h2 class="font-semibold text-blue-950 text-xl">
-        {{ .Param "heading_publications_data" }}
-      </h2>
+      <a href="{{ .Site.BaseURL }}/publications">
+        <h2 class="font-semibold text-blue-950 text-xl hover:text-blue-400">
+          {{ .Param "heading_publications_data" }}
+        </h2></a
+      >
       <ul class="mt-6 ml-3 list-outside list-disc text-sm text-gray-600">
         {{ range where (site.RegularPages.ByParam "publication_date").Reverse
         "Params.publication_type" "related_reading" | first 3 }}
