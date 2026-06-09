@@ -7,7 +7,7 @@ draft = false
     heading_project = 'Project'
     heading_team = 'Team'
     heading_note_illustrations = 'Note on our illustrations'
-    illustrations_credit_text = 'Our project is all about the political fault lines in EU geoeconomic policies. To create a visual identity representing this topic, we partnered with illustrator Kirstin Bone. Her art can be found on the website www.kirstinbone.co.uk and on Instagram: @kirstintheartist'
+    illustrations_credit_text = 'Our project is all about the political fault lines in EU geoeconomic policies.<br />To create a visual identity representing this topic, we partnered with illustrator Kirstin Bone. Her art can be found on the website <span class="hover:text-blue-400"><a href="www.kirstinbone.co.uk" target="_blank">www.kirstinbone.co.uk</a></span> and on Instagram: @kirstintheartist.'
     link_profile_text = 'View profile'
     
     anna = 'Anna Herranz Surralles'
@@ -24,6 +24,8 @@ draft = false
     odile_affiliation = 'PhD Candidate<br />Maastricht University'
     odile_url = 'https://www.maastrichtuniversity.nl/odile-feltkamp'
     odile_bio = 'Prior to her PhD, Odile worked with Anna as a research assistant, preparing the groundwork for a closer analysis of party-political contestation in geoeconomic trade measures. She accrues significant expertise on the new geoeconomic instruments as her MSc thesis unpacked the trilogue negotiations of new geopolitical instruments. As part of her MSc in European Studies, she also received rigorous methodological training.'
+
+    research_assistants_body= 'We would like to gratefully thank our research assistants Jelle Paalman and Lorenzo Pellegrini for their assistance with the data collection.'
 +++
 
 <!-- Project description text on the about page -->
