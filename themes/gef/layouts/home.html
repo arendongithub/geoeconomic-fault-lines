@@ -72,11 +72,11 @@
             <span
               class="inline-block rounded bg-gray-700 px-1 text-xs text-white uppercase"
               >{{ .Param "post_type" }}</span
-            >{{ with .Content }}
+            ><!--{{ with .Content }}
             <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">
               {{ . }}
             </div>
-            {{ end }}</a
+            {{ end }}--></a
           >
         </li>
         {{ end }}
@@ -106,12 +106,12 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            {{ $html := .Param "publication_title" }}{{ $html | safeHTML }} {{
+            {{ $html := .Param "publication_title" }}{{ $html | safeHTML }} <!--{{
             with .Content }}
             <div class="mt-2 border-l-4 border-blue-400 pl-2 italic">
               {{ . }}
             </div>
-            {{ end }}
+            {{ end }}-->
           </a>
         </li>
         {{ end }}
