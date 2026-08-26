@@ -6,7 +6,7 @@ layout = 'news-event-detail'
 type = 'custom_page'
 draft = false
 [params]
-  post_type = 'event' # post_type is 'event' or 'news'
+  post_type = 'news' # post_type is 'event' or 'news'
   post_thumbnail = 'trier_2026.png'
   news_author = 'Odile Feltkamp'
 +++
