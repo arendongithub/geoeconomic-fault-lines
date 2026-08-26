@@ -1,13 +1,13 @@
 +++
 title = 'Trier workshop'
 date = 2026-09-24T14:24:00.000+02:00
-summary = 'Johan and Odile will present at the 'EU's geoeconomic turn' workshop in Trier'
+summary = 'Johan and Odile will present at the _EU's geoeconomic turn' workshop in Trier_'
 layout = 'news-event-detail'
 type = 'custom_page'
 draft = false
 [params]
   post_type = 'news' # post_type is 'event' or 'news'
-  post_thumbnail = 'trier_2026.png'
+  post_thumbnail = 'trier.png'
   news_author = 'Odile Feltkamp'
 +++
 
