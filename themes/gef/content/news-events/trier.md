@@ -1,7 +1,7 @@
 +++
 title = 'Trier workshop'
 date = 2026-09-24T14:24:00.000+02:00
-summary = 'Johan and Odile will present at the _EU's geoeconomic turn' workshop in Trier_'
+summary = 'Johan and Odile will present at the _EU`s geoeconomic turn' workshop in Trier_'
 layout = 'news-event-detail'
 type = 'custom_page'
 draft = false
