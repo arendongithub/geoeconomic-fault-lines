@@ -4,7 +4,7 @@ draft = false
 [params]
     post_type = 'publication'
     publication_type = 'related_reading'
-    publication_title = 'Herranz-Surrallés, A. (2026). The EU global gateway and energy infrastructure: Navigating varieties of economic statecraft. _Globalizations_, 0(0), 1–22. [https://doi.org/10.1080/14747731.2026.2658892]'
+    publication_title = 'Herranz-Surrallés, A. (2026). The EU global gateway and energy infrastructure: Navigating varieties of economic statecraft. _Globalizations_ , 0(0), 1–22. [https://doi.org/10.1080/14747731.2026.2658892]'
     publication_year = 2026
     publication_url = 'https://doi.org/10.1080/14747731.2026.2658892'
 +++
