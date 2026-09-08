@@ -1,5 +1,5 @@
 +++
-title = 'Geopolitics in Europe: What is the impact on citizens?'
+title = 'Geopolitical shifts: Are we prepared?'
 date = 2026-09-05T14:46:00.000+02:00
 summary = 'Presentation at the Maastricht PAS festival'
 layout = 'news-event-detail'
