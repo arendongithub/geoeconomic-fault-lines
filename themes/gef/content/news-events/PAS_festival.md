@@ -10,8 +10,8 @@ draft = false
   post_thumbnail = 'PAS_presentation.jpeg'
   event_date = 2026-09-05T14:46:00.000+02:00
   event_location = 'Maastricht'
-  event_location_full = 'tba'
-  event_time = 'tba'
+  event_location_full = 'Statenzaal, Law faculty'
+  event_time = '20.00'
   event_url = 'https://www.pasmaastricht.nl/'
 +++
 
