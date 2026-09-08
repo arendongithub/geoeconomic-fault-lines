@@ -7,7 +7,7 @@ type = 'custom_page'
 draft = false
 [params]
   post_type = 'event' # post_type is 'event' or 'news'
-  post_thumbnail = 'PAS_festival.png'
+  post_thumbnail = 'PAS_presentation.jpeg'
   event_date = 2026-09-05T14:46:00.000+02:00
   event_location = 'Maastricht'
   event_location_full = 'tba'
@@ -16,7 +16,7 @@ draft = false
 +++
 
 <!-- Event details -->
-A trade war, Greenland as 51st state of the US, war in Ukraine. But also: political polarisation, trade agreements with India and Latin America, and a new cabinet that needs to navigate these choppy waters. What does that mean for us citizens of the Netherlands and the European Union? This session will explore how political parties are reacting to these challenges and what divides or unites them in their visions for solutions. Two sessions will be held, one in Dutch and one in English. 
+A trade war, Greenland as 51st state of the US, war in Ukraine. But also: political polarisation, trade agreements with India and Latin America, and a new cabinet that needs to navigate these choppy waters. What does that mean for us citizens of the Netherlands and the European Union? Our presentation at the PAS festival explored how political parties are reacting to these challenges and what divides or unites them in their visions for solutions. Specifically, we discussed how political parties in the European Parliament support and contest two geoeconomic instruments: the Anti-Coercion Instrument and the Foreign Subsidies Regulation. Our audience unanimously supported the deployment of the 'trade bazooka' (ACI) in the hypothetical situation that the US would threaten tariffs on EU products. Yet, the public was more divided on the issue of increasing tariffs on electrical vehicles from China. Interesting discussions followed! 
 
 &nbsp;
 
