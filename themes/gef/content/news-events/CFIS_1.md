@@ -4,7 +4,7 @@ date = 2026-09-28T15:37:00.000+02:00
 summary = 'The team will participate at the CFIS 2026 academic workshop'
 layout = 'news-event-detail'
 type = 'custom_page'
-draft = false
+draft = true
 [params]
   post_type = 'news' # post_type is 'event' or 'news'
   post_thumbnail = 'CFIS_2026.png'
